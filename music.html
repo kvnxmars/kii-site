@@ -30,6 +30,41 @@
 
 </header>
 
+<section class="platform-links">
+
+<h3>Listen Everywhere</h3>
+
+<div class="platform-grid">
+
+<a href="https://open.spotify.com/artist/18Z4n5Fs9QQjg05bHhaBeH?si=m7hK6otDTESMQ-Qs7fT1QA">Spotify</a>
+<a href="https://music.apple.com/za/artist/18z4n5fs9qqjg05bhhabeh?si=m7hk6otdtesmq-qs7ft1qa">Apple Music</a>
+<a href="https://www.youtube.com/channel/UCUk95NTFYdwlaF-pX6qIPiw">YouTube</a>
+
+</div>
+
+</section>
+
+<section class="featured-drop">
+
+<div class="featured-content">
+
+<img src="images/manymen.JPEG" alt="Album cover">
+
+<div class="drop-info">
+
+<span class="new-label">NEW DROP</span>
+
+<h2>Many Men</h2>
+
+<p>New Single • Out Now</p>
+
+<button class="listen-btn" data-release="0">Listen Now</button>
+
+</div>
+
+</div>
+
+</section>
 
 <section class="music">
 
@@ -43,47 +78,50 @@
 
 <span class="drop-badge">NEW</span>
 
-<img src="images/manymen.JPEG" alt="Album cover">
+<img src="images/raaz.JPEG" alt="Album cover">
 
-<h3>Many Men</h3>
+<h3>paan raaz</h3>
 
 <p class="release-type">Single</p>
 
 <div class="release-buttons">
 
 
-<a href="links/links.html">Listen Now</a>
+<button class="listen-btn" data-release="1">
+    Listen Now
+</button>
+
 
 </div>
 
 </div>
 
 
-<!-- VIDEO CARD -->
 
-<div class="release-card video">
-
-<span class="drop-badge">NEW VIDEO</span>
-
-<div class="video-thumb">
-
-<img src="images/raaz.JPEG" alt="Video thumbnail">
-
-<span class="play-icon">▶</span>
-
-</div>
-
-<h3>paan raaz</h3>
-
-<p class="release-type">Music Video</p>
-
-<a class="watch-btn" href="#">Watch</a>
 
 </div>
 
 </div>
 
 </section>
+
+<div id="dsp-popup" class="popup">
+
+<div class="popup-content">
+
+<h3 id="popup-title"></h3>
+
+<a id="spotify-link" target="_blank">Spotify</a>
+<a id="apple-link" target="_blank">Apple Music</a>
+<a id="youtube-link" target="_blank">YouTube</a>
+
+<button id="close-popup">Close</button>
+
+</div>
+
+</div>
+<script src="js/releases.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
