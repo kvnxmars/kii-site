@@ -227,6 +227,27 @@ margin-bottom:20px;
 
 color:#B3B3B3;
 margin-bottom:15px;
+margin-top: 20px;
+line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+
+.about-container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.about img{
+
+width:100%;
+
+max-width:400px;
+
+}
 
 }
 
@@ -305,6 +326,19 @@ transition:transform 0.3s;
 
 }
 
+.release-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+
+border-radius:4px;
+}
+
+.release-card video img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
 .release-card:hover{
 
 transform:scale(1.04);
