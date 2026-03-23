@@ -1,127 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Music – KII</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music – KII</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header class="navbar">
+  <!-- PERSISTENT SOCIAL BAR -->
+  <aside class="social-bar">
+    <a href="https://instagram.com/kii" target="_blank" aria-label="Instagram">
+      <span class="label">Instagram</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <circle cx="12" cy="12" r="4.5"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+    </a>
+    <a href="https://twitter.com/kii" target="_blank" aria-label="Twitter / X">
+      <span class="label">Twitter</span>
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+    </a>
+    <a href="https://facebook.com/kii" target="_blank" aria-label="Facebook">
+      <span class="label">Facebook</span>
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M24 12.073C24 5.406 18.627 0 12 0S0 5.406 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.696 4.533-4.696 1.313 0 2.686.236 2.686.236v2.971h-1.513c-1.491 0-1.956.93-1.956 1.884v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+      </svg>
+    </a>
+  </aside>
 
-<div class="logo">KII</div>
+  <header class="navbar">
+    <div class="logo">KII</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html" class="active">Music</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<nav>
-<ul>
+  <!-- LINKS PAGE HERO -->
+  <div class="links-hero">
+    <h1>Stream Kii</h1>
+    <p>Pick your platform &nbsp;•&nbsp; Hit play &nbsp;•&nbsp; Feel the West</p>
+  </div>
 
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="music.html">Music</a></li>
+  <!-- STREAMING LINK CARDS -->
+  <div class="link-cards">
 
-</ul>
-</nav>
+    <a href="https://open.spotify.com/artist/18Z4n5Fs9QQjg05bHhaBeH?si=m7hK6otDTESMQ-Qs7fT1QA"
+       target="_blank" class="link-card">
+      <div class="platform-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Spotify</div>
+        <div class="link-sub">Stream all tracks &amp; singles</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
 
-</header>
+    <a href="https://music.apple.com/za/artist/18z4n5fs9qqjg05bhhabeh?si=m7hk6otdtesmq-qs7ft1qa"
+       target="_blank" class="link-card">
+      <div class="platform-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23.994 6.124a9.23 9.23 0 0 0-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 0 0-1.877-.726 10.496 10.496 0 0 0-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026C4.786.07 4.043.15 3.34.428 2.004.958 1.04 1.88.475 3.208A6.38 6.38 0 0 0 .08 5.064c-.012.39-.014.78-.014 1.17v11.534c0 .39.002.78.014 1.17.025.74.113 1.475.363 2.18.473 1.325 1.418 2.228 2.74 2.726.614.23 1.258.34 1.906.387.45.033.903.042 1.355.042h11.32c.45 0 .903-.009 1.354-.042.647-.047 1.29-.158 1.905-.387 1.322-.498 2.267-1.4 2.74-2.726.25-.705.338-1.44.363-2.18.012-.39.014-.78.014-1.17V6.234c0-.037-.002-.073-.004-.11zm-8.55 10.21a3.8 3.8 0 0 1-1.534 1.447 3.727 3.727 0 0 1-1.8.448c-.626 0-1.226-.16-1.766-.47a3.77 3.77 0 0 1-1.315-1.298 3.77 3.77 0 0 1-.532-1.95c0-.7.177-1.343.532-1.922a3.77 3.77 0 0 1 1.47-1.36c.573-.308 1.207-.465 1.9-.47V6.47l5.328-1.64v7.37a3.801 3.801 0 0 1-.546 1.964l-.737-.03z"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Apple Music</div>
+        <div class="link-sub">Listen on Apple Music</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
 
-<section class="platform-links">
+    <a href="https://www.youtube.com/channel/UCUk95NTFYdwlaF-pX6qIPiw"
+       target="_blank" class="link-card">
+      <div class="platform-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">YouTube</div>
+        <div class="link-sub">Watch music videos &amp; visuals</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
 
-<h3>Listen Everywhere</h3>
+    <a href="https://instagram.com/kii" target="_blank" class="link-card">
+      <div class="platform-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4.5"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Instagram</div>
+        <div class="link-sub">Behind the scenes &amp; updates</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
 
-<div class="platform-grid">
+    <a href="https://twitter.com/kii" target="_blank" class="link-card">
+      <div class="platform-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Twitter / X</div>
+        <div class="link-sub">Thoughts, drops &amp; culture</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
 
-<a href="https://open.spotify.com/artist/18Z4n5Fs9QQjg05bHhaBeH?si=m7hK6otDTESMQ-Qs7fT1QA">Spotify</a>
-<a href="https://music.apple.com/za/artist/18z4n5fs9qqjg05bhhabeh?si=m7hk6otdtesmq-qs7ft1qa">Apple Music</a>
-<a href="https://www.youtube.com/channel/UCUk95NTFYdwlaF-pX6qIPiw">YouTube</a>
+    <a href="https://facebook.com/kii" target="_blank" class="link-card">
+      <div class="platform-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M24 12.073C24 5.406 18.627 0 12 0S0 5.406 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.696 4.533-4.696 1.313 0 2.686.236 2.686.236v2.971h-1.513c-1.491 0-1.956.93-1.956 1.884v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Facebook</div>
+        <div class="link-sub">Community &amp; announcements</div>
+      </div>
+      <span class="arrow">→</span>
+    </a>
 
-</div>
+  </div>
 
-</section>
+  <!-- FEATURED DROP -->
+  <section class="featured-drop reveal">
+    <div class="featured-content">
+      <img src="images/manymen.JPEG" alt="Many Men cover">
+      <div class="drop-info">
+        <span class="new-label">NEW DROP</span>
+        <h2>Many Men</h2>
+        <p>New Single &nbsp;•&nbsp; Out Now</p>
+        <button class="listen-btn" data-release="0">Listen Now</button>
+      </div>
+    </div>
+  </section>
 
-<section class="featured-drop">
+  <!-- MUSIC RELEASES -->
+  <section class="music">
+    <h2>New Drops</h2>
+    <div class="release-grid">
 
-<div class="featured-content">
+      <div class="release-card new reveal">
+        <span class="drop-badge">NEW</span>
+        <div class="img-wrap">
+          <img src="images/raaz.JPEG" alt="paan raaz cover">
+        </div>
+        <h3>paan raaz</h3>
+        <p class="release-type">Single</p>
+        <div class="release-buttons">
+          <button class="listen-btn" data-release="1">Listen Now</button>
+        </div>
+      </div>
 
-<img src="images/manymen.JPEG" alt="Album cover">
+    </div>
+  </section>
 
-<div class="drop-info">
+  <!-- CONTACTS SECTION -->
+  <section class="contacts reveal">
+    <h2>Connect with Kii</h2>
+    <p>Follow the journey</p>
+    <div class="social-grid">
+      <a href="https://instagram.com/kii" target="_blank" class="social-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4.5"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>Instagram</span>
+      </a>
+      <a href="https://twitter.com/kii" target="_blank" class="social-card">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+        <span>Twitter / X</span>
+      </a>
+      <a href="https://facebook.com/kii" target="_blank" class="social-card">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M24 12.073C24 5.406 18.627 0 12 0S0 5.406 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.696 4.533-4.696 1.313 0 2.686.236 2.686.236v2.971h-1.513c-1.491 0-1.956.93-1.956 1.884v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+        </svg>
+        <span>Facebook</span>
+      </a>
+    </div>
+  </section>
 
-<span class="new-label">NEW DROP</span>
+  <!-- DSP POPUP -->
+  <div id="dsp-popup" class="popup">
+    <div class="popup-content">
+      <h3 id="popup-title"></h3>
+      <a id="spotify-link" target="_blank">Spotify</a>
+      <a id="apple-link" target="_blank">Apple Music</a>
+      <a id="youtube-link" target="_blank">YouTube</a>
+      <button id="close-popup">Close</button>
+    </div>
+  </div>
 
-<h2>Many Men</h2>
-
-<p>New Single • Out Now</p>
-
-<button class="listen-btn" data-release="0">Listen Now</button>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="music">
-
-<h2>New Drops</h2>
-
-<div class="release-grid">
-
-<!-- SONG / ALBUM CARD -->
-
-<div class="release-card new">
-
-<span class="drop-badge">NEW</span>
-
-<img src="images/raaz.JPEG" alt="Album cover">
-
-<h3>paan raaz</h3>
-
-<p class="release-type">Single</p>
-
-<div class="release-buttons">
-
-
-<button class="listen-btn" data-release="1">
-    Listen Now
-</button>
-
-
-</div>
-
-</div>
-
-
-
-
-</div>
-
-</div>
-
-</section>
-
-<div id="dsp-popup" class="popup">
-
-<div class="popup-content">
-
-<h3 id="popup-title"></h3>
-
-<a id="spotify-link" target="_blank">Spotify</a>
-<a id="apple-link" target="_blank">Apple Music</a>
-<a id="youtube-link" target="_blank">YouTube</a>
-
-<button id="close-popup">Close</button>
-
-</div>
-
-</div>
-<script src="js/releases.js"></script>
-<script src="js/script.js"></script>
-
+  <script src="js/releases.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

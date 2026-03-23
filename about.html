@@ -1,64 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About – KII</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – KII</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<header class="navbar">
+  <!-- PERSISTENT SOCIAL BAR -->
+  <aside class="social-bar">
+    <a href="https://www.instagram.com/kii_s.a/" target="_blank" aria-label="Instagram">
+      <span class="label">Instagram</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <circle cx="12" cy="12" r="4.5"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+    </a>
+    <a href="https://x.com/kiisa____" target="_blank" aria-label="Twitter / X">
+      <span class="label">Twitter</span>
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+    </a>
+    <a href="https://facebook.com/moagise.mboniswa" target="_blank" aria-label="Facebook">
+      <span class="label">Facebook</span>
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M24 12.073C24 5.406 18.627 0 12 0S0 5.406 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.696 4.533-4.696 1.313 0 2.686.236 2.686.236v2.971h-1.513c-1.491 0-1.956.93-1.956 1.884v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+      </svg>
+    </a>
+  </aside>
 
-<div class="logo">KII</div>
+  <header class="navbar">
+    <div class="logo">KII</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="music.html">Music</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<nav>
-<ul>
+  <section class="about">
+    <div class="about-container reveal">
 
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="music.html">Music</a></li>
+      <div class="about-img-wrap">
+        <img src="images/about.JPG" alt="Kii portrait">
+      </div>
 
-</ul>
-</nav>
+      <div class="about-text">
+        <span class="tagline">West Rand, Johannesburg</span>
+        <h2>About Kii</h2>
+        <p>
+          Kii is a Johannesburg-based artist bringing together emotion, storytelling
+          and sound inspired by the culture of the West Rand of Jozi.
+        </p>
+        <p>
+          Blending modern production with raw artistic expression, creating music
+          that represents identity, experience and movement.
+        </p>
+        <p>
+          From the streets of Randfontein to streaming platforms worldwide, Kii's sound is
+          unmistakably his own — layered, honest, and built for the culture.
+        </p>
+        <br>
+        <a href="music.html" class="btn"><span>Hear the Music</span></a>
+      </div>
 
-</header>
+    </div>
+  </section>
 
+  <!-- CONTACTS SECTION -->
+  <section class="contacts reveal">
+    <h2>Connect with Kii</h2>
+    <p>Follow the journey</p>
+    <div class="social-grid">
+      <a href="https://www.instagram.com/kii_s.a/" target="_blank" class="social-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4.5"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        <span>Instagram</span>
+      </a>
+      <a href="https://x.com/kiisa____" target="_blank" class="social-card">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+        <span>Twitter / X</span>
+      </a>
+      <a href="https://facebook.com/moagise.mboniswa" target="_blank" class="social-card">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M24 12.073C24 5.406 18.627 0 12 0S0 5.406 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.696 4.533-4.696 1.313 0 2.686.236 2.686.236v2.971h-1.513c-1.491 0-1.956.93-1.956 1.884v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+        </svg>
+        <span>Facebook</span>
+      </a>
+    </div>
+  </section>
 
-<section class="about">
-
-<div class="about-container">
-
-<img src="images/about.JPG" alt="Moagise portrait">
-
-<div class="about-text">
-
-<h2>About Kii</h2>
-
-<p>
-Kii is a Johannesburg-based musician bringing
-together emotion, storytelling and sound inspired
-by the culture of the West side of Jozi.
-</p>
-
-<p>
-His work blends modern production with raw artistic
-expression, creating music that represents identity,
-experience and movement.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
