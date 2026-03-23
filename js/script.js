@@ -1,47 +1,43 @@
-const popup = document.getElementById("dsp-popup");
+// ===========================
+// SCROLL REVEAL
+// ===========================
 
-const popupTitle = document.getElementById("popup-title");
+const reveals = document.querySelectorAll('.reveal');
 
-const spotifyLink = document.getElementById("spotify-link");
-const appleLink = document.getElementById("apple-link");
-const youtubeLink = document.getElementById("youtube-link");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12 });
 
-const closeBtn = document.getElementById("close-popup");
+reveals.forEach(el => observer.observe(el));
 
-const buttons = document.querySelectorAll(".listen-btn");
+// ===========================
+// ACTIVE NAV LINK
+// ===========================
 
-buttons.forEach(button => {
-
-button.addEventListener("click", () => {
-
-const releaseIndex = button.dataset.release;
-
-const release = releases[releaseIndex];
-
-popupTitle.textContent = "Listen to " + release.title;
-
-spotifyLink.href = release.spotify;
-appleLink.href = release.apple;
-youtubeLink.href = release.youtube;
-
-popup.style.display = "flex";
-
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('nav a').forEach(link => {
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('active');
+  }
 });
 
-});
+// ===========================
+// POPUP (music page)
+// ===========================
 
-closeBtn.addEventListener("click", () => {
+const popup = document.getElementById('dsp-popup');
+const closeBtn = document.getElementById('close-popup');
 
-popup.style.display = "none";
+if (popup && closeBtn) {
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
 
-});
-
-window.addEventListener("click",(e)=>{
-
-if(e.target.classList.contains("popup")){
-
-popup.style.display="none";
-
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) popup.style.display = 'none';
+  });
 }
-
-});
