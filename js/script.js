@@ -15,29 +15,41 @@ const observer = new IntersectionObserver((entries) => {
 reveals.forEach(el => observer.observe(el));
 
 // ===========================
-// ACTIVE NAV LINK
+// POPUP (music page only)
 // ===========================
 
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('nav a').forEach(link => {
-  if (link.getAttribute('href') === currentPage) {
-    link.classList.add('active');
-  }
-});
-
-// ===========================
-// POPUP (music page)
-// ===========================
-
-const popup = document.getElementById('dsp-popup');
-const closeBtn = document.getElementById('close-popup');
+const popup    = document.getElementById("dsp-popup");
+const closeBtn = document.getElementById("close-popup");
 
 if (popup && closeBtn) {
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
+
+  const popupTitle  = document.getElementById("popup-title");
+  const spotifyLink = document.getElementById("spotify-link");
+  const appleLink   = document.getElementById("apple-link");
+  const youtubeLink = document.getElementById("youtube-link");
+
+  const buttons = document.querySelectorAll(".listen-btn");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const release = releases[button.dataset.release];
+
+      popupTitle.textContent = "Listen to " + release.title;
+      spotifyLink.href       = release.spotify;
+      appleLink.href         = release.apple;
+      youtubeLink.href       = release.youtube;
+
+      popup.style.display = "flex";
+    });
   });
 
-  popup.addEventListener('click', (e) => {
-    if (e.target === popup) popup.style.display = 'none';
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target.classList.contains("popup")) {
+      popup.style.display = "none";
+    }
   });
 }
