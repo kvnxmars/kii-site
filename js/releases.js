@@ -16,7 +16,7 @@ const releases = [
   {
     title: "ma ten'e",
     type: "Single",
-    era: "new",
+    era: "older",
     image: "images/maten.jpg",
     spotify: "https://open.spotify.com/album/2ilnou7exPy6YkfYi03IDv?si=i6Yvk-aOS6aJ7fgK1b7cIw&nd=1&dlsi=29b9210524224e87",
     apple:   "https://music.apple.com/za/album/ma-tene-single/1887244410",
